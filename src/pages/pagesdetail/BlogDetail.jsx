@@ -5,7 +5,7 @@ const BlogDetail = () => {
   return (
     <Navbar>
         <div className="flex flex-col md:flex-row items-start w-[95%] mx-auto gap-4">
-            <div className="bg-white text-white min-h-screen py-10 w-[120%]">
+            <div className="bg-white text-white min-h-screen py-10 md:w-[120%]">
             {/* Breadcrumbs */}
             <div className="text-sm text-gray-400">
                 <span className="hover:underline cursor-pointer">Accueil</span> &gt;
@@ -14,14 +14,17 @@ const BlogDetail = () => {
             </div>
 
             {/* Blog Title */}
-            <h1 className="text-2xl md:text-4xl font-bold mt-4 text-[#042D47]">
+            <h1 className="text-xl md:text-4xl font-bold mt-4 text-[#042D47]">
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It
                 has roots in a piece of classical Latin literature from 45 BC
             </h1>
 
             {/* Author & Date */}
-            <p className="text-gray-400 text-sm mt-2">
-                Mohamed Laghdav • 7 minutes de lecture • 25 novembre 2024
+            <p className="text-gray-400 text-sm mt-2 flex flex-col md:flex-row">
+                <span>• Mohamed Laghdav</span>
+                <span>• 7 minutes de lecture</span>
+                <span>• 25 novembre 2024</span>
+                  
             </p>
 
             {/* Main Image */}
@@ -29,14 +32,14 @@ const BlogDetail = () => {
                 <img
                 src="/blog-image.jpg"
                 alt="AI Technology"
-                className="w-full rounded-lg"
+                className="md:w-full rounded-lg"
                 />
             </div>
 
             {/* Article Content */}
             <div className="mt-6 text-black leading-relaxed">
                 <p>
-                    <span className="font-bold text-2xl">What is Lorem Ipsum?</span>
+                    <span className="font-bold md:text-2xl">What is Lorem Ipsum?</span>
                     <br />
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br />
                     <br />

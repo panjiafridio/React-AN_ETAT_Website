@@ -67,12 +67,12 @@ const Blog = () => {
           alt={blogPosts[0].title}
           className="w-full h-full object-cover rounded-lg"
         />
-        <div className="absolute bottom-4 left-3 bg-white bg-opacity-50 p-6 flex flex-col justify-end">
-          <p className="text-white bg-[#042D47] text-sm w-[40%] p-3">
+        <div className="w-[50%] md:w-full absolute md:bottom-4 left-20 bottom-7 md:left-3 bg-white bg-opacity-50 p-2 md:p-6 flex flex-col justify-end">
+          <p className="text-white bg-[#042D47] text-[40%] md:text-sm md:w-[40%] p-3">
             {blogPosts[0].author} • {blogPosts[0].readingTime} de lecture •{" "}
             {blogPosts[0].date}
           </p>
-          <h3 className="text-black font-bold text-lg cursor-pointer hover:underline">
+          <h3 className="text-black font-bold text-[70%] md:text-lg cursor-pointer hover:underline">
             <Link to="/blogdetail">{blogPosts[0].title}</Link>
           </h3>
         </div>

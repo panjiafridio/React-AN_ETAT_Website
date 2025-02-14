@@ -91,13 +91,13 @@ const Recrutement = () => {
       </div>
 
       {/* CEO Message */}
-      <div className="grid md:grid-cols-2 gap-6 mt-12 items-center">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-6 mt-12">
         <div className="text-gray-700 text-lg">
-          <p className="italic border-l-4 pl-4">
+          <p className="italic">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <p className="font-bold text-black mt-4">Boide Ould Sghair</p>
-          <p className="text-gray-500">Directeur Général de la AN-ETAT</p>
+          <p className="font-bold text-[#0F3B56] mt-4">Boide Ould Sghair</p>
+          <p className="text-[#0F3B56]">Directeur Général de la AN-ETAT</p>
         </div>
         <img
           src={Boide}

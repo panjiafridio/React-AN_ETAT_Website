@@ -12,10 +12,10 @@ const RecrutementDetail = () => {
       </nav>
 
       {/* Card Detail */}
-      <div className="mt-6 flex items-start flex-col md:flex-row gap-6">
+      <div className="mt-6 flex items-start flex-col-reverse md:flex-row gap-6">
         <div className="md:w-3/4">
             {/* Judul */}
-            <h1 className="text-4xl font-bold text-black mb-14">
+            <h1 className="text-2xl md:text-4xl font-bold text-black mb-14">
                 Maecenas consequat pellentesque venenatis magna laoreet
             </h1>
             <h1 className="text-2xl font-bold">Lorem ipsum dolor</h1><br />
@@ -47,7 +47,7 @@ const RecrutementDetail = () => {
           <p className="text-sm text-gray-600 mt-2">
             <span className="font-bold">Date dexpiration:</span> Vendredi 20 décembre
           </p>
-          <button className="w-full bg-gray-100 text-black mt-4 py-2 rounded-md hover:bg-gray-200 cursor-pointer">
+          <button className="w-[70%] md:w-full bg-gray-200 text-black mt-4 py-2 rounded-md hover:bg-gray-200 cursor-pointer">
             Postuler maintenant →
           </button>
         </div>

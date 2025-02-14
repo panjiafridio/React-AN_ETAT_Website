@@ -74,7 +74,7 @@ const Header = () => {
                 </button>
 
                 <ul className="mt-12 space-y-6 text-gray-700 px-6">
-                    <li className="border-b pb-2 hover:text-blue-600 cursor-pointer font-bold">
+                    <li className="border-b pb-2 hover:text-blue-600 flex flex-col gap-3 cursor-pointer font-bold">
                         <Link to="/menu">Accueil</Link>
                         <Link to="/news">Actualités</Link>
                         <Link to="/events">Évènements</Link>

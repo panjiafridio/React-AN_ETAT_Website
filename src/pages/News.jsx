@@ -61,13 +61,13 @@ const News = () => {
 
         <div className="flex flex-col md:flex-row gap-6 mt-6">
             {/* Main Content */}
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-2/3 ">
             {currentNews.map((news, index) => (
-                <div key={index} className="border-b pb-6 mb-6 flex flex-row gap-2 items-start">
+                <div key={index} className="pb-6 mb-6 flex flex-col md:flex-row gap-2 items-start">
                   {news.image && (
-                      <img src={news.image} alt={news.title} className="rounded-lg" />
+                      <img src={news.image} alt={news.title} className="rounded-lg w-full md:w-[20%]" />
                   )}
-                  <div>
+                  <div className="md:mr-3">
                     <p className="text-sm text-gray-500">{news.date}</p>
                     <h2 className="text-lg font-semibold hover:underline text-black">
                       <Link to="/newsdetail">{news.title}</Link>
@@ -96,7 +96,7 @@ const News = () => {
             </div>
 
             {/* Sidebar */}
-            <div className="w-full md:w-1/3 p-4 bg-gray-100 rounded-lg">
+            <div className="w-full md:w-1/3 h-[40%] p-4 bg-[#F6F6F6] rounded-lg">
             <h3 className="font-semibold text-lg mb-4">Rechercher dans les actualités</h3>
             <input
                 type="text"
@@ -109,7 +109,7 @@ const News = () => {
             <select className="w-full p-2 border rounded-md mb-4">
                 <option>Mois</option>
             </select>
-            <button className="w-full p-2 bg-white text-black rounded-md">
+            <button className="w-[40%] p-2 bg-white text-black rounded-md">
                 Rechercher
             </button>
             </div>

@@ -41,17 +41,19 @@ const NewsDetail = () => {
         </div>
 
         {/* Right Sidebar */}
-        <div className="lg:w-1/3 bg-gray-300 p-6 rounded-lg mt-10 lg:mt-0 h-[40%]">
-          <h2 className="text-xl font-semibold text-black border-t-4 pt-5 pb-1 border-b-2 border-b-white  border-black">Actualités récentes</h2>
-          <div className="mt-4 space-y-4">
-            {[1, 2, 3].map((item, index) => (
-              <div key={index} className="border-b pb-3">
-                <p className="text-gray-400 text-sm">25 NOVEMBRE 2024</p>
-                <p className="text-black font-medium hover:text-blue-300 cursor-pointer">
-                  Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-                </p>
-              </div>
-            ))}
+        <div className="lg:w-1/3 flex flex-col-reverse border-t-4 border-t-black bg-[#F6F6F6] p-6 mt-10 lg:mt-0 h-[40%]">
+          <div>
+            <h2 className="text-xl font-semibold text-black pt-5 pb-1 border-b-2 border-b-gray-200">Actualités récentes</h2>
+            <div className="mt-4 space-y-4">
+              {[1, 2, 3].map((item, index) => (
+                <div key={index} className="border-b pb-3">
+                  <p className="text-gray-400 text-sm">25 NOVEMBRE 2024</p>
+                  <p className="text-black font-medium hover:text-blue-300 cursor-pointer">
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Social Share */}
