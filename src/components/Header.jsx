@@ -7,6 +7,13 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [dir, setDir] = useState("ltr");
+
+    const changeDirection = (lang) => {
+        const newDir = lang === "ar" ? "rtl" : "ltr";
+        setDir(newDir);
+        document.documentElement.dir = newDir;
+    };
   return (
     <>
         {/* Header */}
@@ -21,13 +28,21 @@ const Header = () => {
                         <img src={headerLogoTwo} alt="Logo" className="h-10" />
                     </div>
 
-                    <div className="flex justify-evenly items-center w-[40%]">
-                        <ul className="flex space-x-6 text-gray-700">
-                            {["À propos", "Contactez-nous", "Français"].map((item) => (
-                                <li key={item} className="hover:text-blue-600 cursor-pointer font-bold">
+                    <div className="flex justify-evenly items-center w-[60%]">
+                        <ul className="flex space-x-14 text-gray-700">
+                            {["À propos", "Contactez-nous"].map((item) => (
+                                <li key={item} className="hover:underline cursor-pointer font-bold">
                                     <Link to="/sidebar">{item}</Link>
                                 </li>
                             ))}
+                            <select
+                                className="p-2 border rounded bg-white shadow-md"
+                                onChange={(e) => changeDirection(e.target.value)}
+                            >
+                                <option value="en">English</option>
+                                <option value="ar">العربية</option>
+                                <option value="fr">Français</option>
+                            </select>
                         </ul>
 
                         {/* Ikon Sosial Media */}
@@ -41,14 +56,14 @@ const Header = () => {
                 </div>
 
                 {/* Menu Desktop */}
-                <ul className="flex mt-3 space-x-6 text-gray-700">
+                <ul className="flex mt-3 space-x-6 text-gray-700 bg-[#EEF6FC] p-4">
                     <li className="cursor-pointer font-bold flex gap-[32px]">
-                        <Link className="hover:text-blue-600" to="/menu">Accueil</Link>
-                        <Link className="hover:text-blue-600" to="/news">Actualités</Link>
-                        <Link className="hover:text-blue-600" to="/events">Évènements</Link>
-                        <Link className="hover:text-blue-600" to="/menu">Route/Roadmap</Link>
-                        <Link className="hover:text-blue-600" to="/blog">Blog</Link>
-                        <Link className="hover:text-blue-600" to="/recruitment">Recruitment</Link>
+                        <Link className="hover:underline active:underline" to="/menu">Accueil</Link>
+                        <Link className="hover:underline active:underline" to="/news">Actualités</Link>
+                        <Link className="hover:underline active:underline" to="/events">Évènements</Link>
+                        <Link className="hover:underline active:underline" to="/menu">Route/Roadmap</Link>
+                        <Link className="hover:underline active:underline" to="/blog">Blog</Link>
+                        <Link className="hover:underline active:underline" to="/recruitment">Recruitment</Link>
                     </li>
                 </ul>
             </div>
@@ -73,14 +88,14 @@ const Header = () => {
                     <FaTimes size={24} />
                 </button>
 
-                <ul className="mt-12 space-y-6 text-gray-700 px-6">
-                    <li className="border-b pb-2 hover:text-blue-600 flex flex-col gap-3 cursor-pointer font-bold">
-                        <Link to="/menu">Accueil</Link>
-                        <Link to="/news">Actualités</Link>
-                        <Link to="/events">Évènements</Link>
-                        <Link to="/menu">Route/Roadmap</Link>
-                        <Link to="/blog">Blog</Link>
-                        <Link to="/recruitment">Recruitment</Link>
+                <ul className="mt-12 space-y-6 text-gray-700 bg-[#EEF6FC] px-6">
+                    <li className="border-b pb-2 hover:underline flex flex-col gap-3 cursor-pointer font-bold">
+                        <Link className="hover:underline" to="/menu">Accueil</Link>
+                        <Link className="hover:underline" to="/news">Actualités</Link>
+                        <Link className="hover:underline" to="/events">Évènements</Link>
+                        <Link className="hover:underline" to="/menu">Route/Roadmap</Link>
+                        <Link className="hover:underline" to="/blog">Blog</Link>
+                        <Link className="hover:underline" to="/recruitment">Recruitment</Link>
                     </li>
                 </ul>
 
