@@ -4,12 +4,6 @@ const RecrutementDetail = () => {
   return (
     <Navbar>
     <div className="bg-white text-black min-h-screen px-10 py-6">
-      {/* Breadcrumb */}
-      <nav className="text-sm text-gray-400 mb-4">
-        <a href="/" className="hover:underline">Accueil</a> &gt;{" "}
-        <a href="#" className="hover:underline">Recruitment</a> &gt;{" "}
-        <span className="text-gray-300">Detail</span>
-      </nav>
 
       {/* Card Detail */}
       <div className="mt-6 flex items-start flex-col-reverse md:flex-row gap-6">

@@ -3,6 +3,7 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaEnvelope, FaBars, FaTimes } from "
 import headerLogo from "../assets/Header-logo.png";
 import headerLogoTwo from "../assets/Header-logo-two.png";
 import { Link } from "react-router-dom";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 
 const Header = () => {
@@ -36,7 +37,7 @@ const Header = () => {
                                 </li>
                             ))}
                             <select
-                                className="p-2 border rounded bg-white shadow-md"
+                                className="bg-white font-bold"
                                 onChange={(e) => changeDirection(e.target.value)}
                             >
                                 <option value="en">English</option>
@@ -66,6 +67,7 @@ const Header = () => {
                         <Link className="hover:underline active:underline" to="/recruitment">Recruitment</Link>
                     </li>
                 </ul>
+                <Breadcrumbs />
             </div>
 
             {/* Navbar Mobile */}

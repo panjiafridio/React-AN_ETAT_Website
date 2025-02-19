@@ -6,13 +6,6 @@ const BlogDetail = () => {
     <Navbar>
         <div className="flex flex-col md:flex-row items-start w-[95%] mx-auto gap-4">
             <div className="bg-white text-white min-h-screen py-10 md:w-[120%]">
-            {/* Breadcrumbs */}
-            <div className="text-sm text-gray-400">
-                <span className="hover:underline cursor-pointer">Accueil</span> &gt;
-                <span className="hover:underline cursor-pointer"> Blog</span> &gt;
-                <span className="text-blue-500"> Contrary to popular belief...</span>
-            </div>
-
             {/* Blog Title */}
             <h1 className="text-xl md:text-4xl font-bold mt-4 text-[#042D47]">
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It

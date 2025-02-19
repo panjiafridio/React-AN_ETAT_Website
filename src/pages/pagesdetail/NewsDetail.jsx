@@ -5,12 +5,6 @@ const NewsDetail = () => {
   return (
     <Navbar>
     <div className="min-h-screen bg-white text-white px-4 lg:px-20 py-10">
-      {/* Breadcrumb */}
-      <nav className="text-sm text-gray-400 mb-6">
-        <span className="hover:text-gray-200 cursor-pointer">Accueil</span> &gt;{" "}
-        <span className="hover:text-gray-200 cursor-pointer">Actualités</span> &gt;{" "}
-        <span className="text-gray-200">Aenean vel est rhoncus massa</span>
-      </nav>
 
       <div className="lg:flex gap-8">
         {/* Left Content */}

@@ -6,13 +6,6 @@ const EventDetail = () => {
     <Navbar>
         <div className='flex flex-col md:flex-row'>
             <div className="bg-white text-black min-h-screen p-6 md:w-[80%]">
-                {/* Header */}
-                <nav className="text-sm text-gray-400 mb-4">
-                    <a href="#" className="hover:underline">Accueil</a> &gt;
-                    <a href="#" className="hover:underline"> Événements</a> &gt;
-                    <span className="text-gray-200"> Pellentesque malesuada mauris tincidunt.</span>
-                </nav>
-
                 {/* Judul */}
                 <h1 className="text-3xl font-bold">
                     Pellentesque malesuada mauris tincidunt. <br /> Nunc id nisl quis mi tempor

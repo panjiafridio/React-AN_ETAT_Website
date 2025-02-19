@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 const Contact = () => {
   return (
     <Navbar>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row md:w-[95%] mx-auto">
         {/* Sidebar */}
         <aside className="w-full md:w-1/4 p-4 bg-gray-100 rounded-lg">
           <ul className="space-y-2">

@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const Footer = () => {
   return (
     <>
-        <footer className="bg-gray-100 py-10 px-6 md:px-12 lg:px-20">
+        <footer className="bg-gray-100 py-10 px-6 md:px-12 lg:px-20 md:w-[93%] mx-auto">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
                 
                 {/* Logo dan Keterangan */}
