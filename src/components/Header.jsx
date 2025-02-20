@@ -4,16 +4,34 @@ import headerLogo from "../assets/Header-logo.png";
 import headerLogoTwo from "../assets/Header-logo-two.png";
 import { Link } from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
+import { useNavigate } from "react-router-dom";
 
 
 const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [dir, setDir] = useState("ltr");
-
-    const changeDirection = (lang) => {
-        const newDir = lang === "ar" ? "rtl" : "ltr";
-        setDir(newDir);
-        document.documentElement.dir = newDir;
+        const [isOpen, setIsOpen] = useState(false);
+        const navigate = useNavigate(); // Hook untuk navigasi halaman
+      
+        const changePage = (lang) => {
+          if (lang === "ar") {
+            document.documentElement.setAttribute("dir", "rtl"); // Ubah ke RTL
+          } else {
+            document.documentElement.setAttribute("dir", "ltr"); // Kembali ke LTR
+          }
+      
+          // Pindah halaman sesuai bahasa yang dipilih
+          switch (lang) {
+            case "en":
+              navigate("/menu"); // Halaman untuk bahasa Inggris
+              break;
+            case "ar":
+              navigate("/menuarabic"); // Halaman untuk bahasa Arab
+              break;
+            case "fr":
+              navigate("/menu"); // Halaman untuk bahasa Prancis
+              break;
+            default:
+              navigate("/"); // Kembali ke halaman utama
+        }
     };
   return (
     <>
@@ -38,7 +56,7 @@ const Header = () => {
                             ))}
                             <select
                                 className="bg-white font-bold"
-                                onChange={(e) => changeDirection(e.target.value)}
+                                onChange={(e) => changePage(e.target.value)}
                             >
                                 <option value="en">English</option>
                                 <option value="ar">العربية</option>

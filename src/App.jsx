@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
 // import Breadcrumbs from "./components/Breadcrumbs";
 import Menu from "./pages/Menu";
+import MenuArabic from "./pages/MenuArabic";
 import Sidebar from "./components/Sidebar";
 import News from "./pages/News"
 import Events from "./pages/Events"
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Menu />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/menuarabic" element={<MenuArabic />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sidebar" element={<Sidebar />} />
           <Route path="/news" element={<News />} />
