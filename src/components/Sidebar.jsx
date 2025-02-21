@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom"
 
 const Sidebar = () => {
   return (
@@ -8,7 +9,9 @@ const Sidebar = () => {
         <aside className="w-full md:w-1/4 p-4 bg-gray-100 rounded-lg">
           <ul className="space-y-2">
             <li className="font-semibold text-blue-600">À propos</li>
-            <li><a href="/contact" className="text-gray-600 hover:text-blue-500">Contactez-nous</a></li>
+            <li>
+              <Link className="hover:underline active:underline" to="/contact">Contactez-nous</Link>
+            </li>
           </ul>
         </aside>
 

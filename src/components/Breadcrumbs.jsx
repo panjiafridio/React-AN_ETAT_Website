@@ -10,10 +10,6 @@ const Breadcrumbs = () => {
     <div className="bg-gray-100 py-3 px-4 text-sm text-gray-600">
       <div className="container mx-auto">
         <nav className="flex space-x-2">
-          {/* Home Breadcrumb */}
-          <Link to="/" className="text-blue-500 hover:underline">
-            Accueil
-          </Link>
           {pathnames.length > 0 && <span>›</span>}
 
           {/* Breadcrumbs Dinamis */}
