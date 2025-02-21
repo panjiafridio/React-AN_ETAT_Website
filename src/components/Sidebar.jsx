@@ -31,7 +31,7 @@ const Sidebar = () => {
             Dans le cadre de l’élaboration des outils de communication de l’AN-ETAT et du renforcement de la légitimité de lAN-ETAT auprès des acteurs nationaux et internationaux, l’AN-ETAT souhaite mettre en place un Site Web pour fournir des informations clés sur lagence, ses activités, ses projets en cours, et faciliter la communication avec les parties prenantes.
           </p>
 
-          <h2 className="mt-6 text-2xl font-bold mt-9">Objectifs de lAN-ETAT</h2>
+          <h2 className="mt-6 text-2xl font-bold md:mt-9">Objectifs de lAN-ETAT</h2>
           <ul className="mt-2 space-y-2 text-gray-600">
             <li>📌 Fournir des informations clés : l’AN-ETAT partagera les informations liées à sa mission, ses activités, ses projets et réalisations…</li>
             <li>📌 Faciliter la communication : des formulaires de contact, des adresses emails voire des coordonnées téléphoniques ou des réseaux sociaux seront partagés via notre site Web ;</li>
